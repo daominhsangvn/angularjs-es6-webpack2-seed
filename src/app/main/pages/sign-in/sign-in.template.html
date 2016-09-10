@@ -1,0 +1,34 @@
+<form role="form" id="validate" ng-submit="$ctrl.signin($ctrl.model)" name="$ctrl.frm" novalidate>
+  <div class="text-xs-center m-b-3"><img src="assets/img/logo-icon.png" height="80" alt="" class="m-b-1"><h5>
+    Welcome back!</h5>
+    <p class="text-muted">Sign in with your app id to continue.</p></div>
+  <fieldset class="form-group"><label for="email">Enter your email</label><input type="email"
+                                                                                 class="form-control form-control-lg"
+                                                                                 id="email"
+                                                                                 placeholder="Email"
+                                                                                 name="email"
+                                                                                 ng-model="$ctrl.model.email"
+                                                                                 required></fieldset>
+  <fieldset class="form-group"><label for="password">Enter your password</label><input type="password"
+                                                                                       class="form-control form-control-lg"
+                                                                                       id="password"
+                                                                                       name="password"
+                                                                                       ng-model="$ctrl.model.password"
+                                                                                       placeholder="********"
+                                                                                       required></fieldset>
+  <label class="custom-control custom-checkbox m-b-1"><input type="checkbox" class="custom-control-input" ng-model="$ctrl.model.remember">
+    <span class="custom-control-indicator"></span> <span
+      class="custom-control-description">Stay logged in</span></label>
+  <button class="btn btn-primary btn-block btn-lg" type="submit" ng-disabled="$ctrl.frm.$invalid" promise-btn="$ctrl.promiseButton">Login</button>
+  <div class="divider"><span>OR</span></div>
+  <div class="text-xs-center"><p>Login with your social account</p>
+    <button href="javascript:;" class="btn btn-icon-icon btn-facebook btn-lg m-b-1 m-r-1"><i
+      class="fa fa-facebook"></i></button>
+    <button href="javascript:;" class="btn btn-icon-icon btn-github btn-lg m-b-1 m-r-1"><i
+      class="fa fa-github"></i></button>
+    <button href="javascript:;" class="btn btn-icon-icon btn-google btn-lg m-b-1 m-r-1"><i
+      class="fa fa-google-plus"></i></button>
+    <button href="javascript:;" class="btn btn-icon-icon btn-linkedin btn-lg m-b-1 m-r-1"><i
+      class="fa fa-linkedin"></i></button>
+  </div>
+</form>

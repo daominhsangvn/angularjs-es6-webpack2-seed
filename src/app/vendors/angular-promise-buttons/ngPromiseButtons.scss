@@ -1,0 +1,77 @@
+//http://cssload.net/en/spinners/3
+
+
+.is-loading .btn-spinner {
+  display: inline-block;
+  font-size: 3px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-left: 1.1em solid #ffffff;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
+}
+.is-loading .btn-spinner,
+.is-loading .btn-spinner:after {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+@-webkit-keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+/* :not(:required) hides this rule from IE9 and below */
+//.btn-spinner:not(:required) {
+//  -webkit-animation: three-quarters 1250ms infinite linear;
+//  -moz-animation: three-quarters 1250ms infinite linear;
+//  -ms-animation: three-quarters 1250ms infinite linear;
+//  -o-animation: three-quarters 1250ms infinite linear;
+//  animation: three-quarters 1250ms infinite linear;
+//  border: 3px solid #8c8c8c;
+//  border-right-color: transparent;
+//  border-radius: 100%;
+//  box-sizing: border-box;
+//  display: inline-block;
+//  position: relative;
+//  vertical-align: middle;
+//  overflow: hidden;
+//  text-indent: -9999px;
+//  width: 18px;
+//  height: 18px;
+//}
+//
+//.btn-spinner:not(:required) {
+//  margin-left: -22px;
+//  opacity: 0;
+//  transition: 0.4s margin ease-out, 0.2s opacity ease-out;
+//}
+//
+//.is-loading .btn-spinner {
+//  transition: 0.2s margin ease-in, 0.4s opacity ease-in;
+//  margin-left: 5px;
+//  opacity: 1;
+//}

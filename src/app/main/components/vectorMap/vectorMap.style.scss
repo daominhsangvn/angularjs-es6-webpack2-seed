@@ -1,0 +1,10 @@
+@import '~jqvmap/dist/jqvmap.css';
+
+vector-map {
+  @extend div;
+  display: block;
+  .jqvmap-zoomin, .jqvmap-zoomout {
+    padding: 0;
+  }
+}
+

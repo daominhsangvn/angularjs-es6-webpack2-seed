@@ -1,0 +1,13 @@
+/* Core styles */
+@import './../core/scss/index';
+
+/* App Component styles */
+app {
+  @extend body !optional;
+}
+
+/* Components */
+@import './components/index';
+
+/* Page styles */
+@import './pages/index';

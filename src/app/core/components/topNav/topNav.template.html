@@ -1,0 +1,133 @@
+<div class="header-inner">
+  <div class="navbar-item navbar-spacer-right brand hidden-lg-up">
+    <a href="javascript:;" data-toggle="sidebar" class="toggle-offscreen">
+      <i class="material-icons">menu</i>
+    </a>
+    <a href="javascript:;" class="brand-logo hidden-xs-down">
+      <img src="assets/img/logo_white.png"
+           alt="logo"/>
+    </a>
+  </div>
+  <a class="navbar-item navbar-spacer-right navbar-heading hidden-md-down" href="/">
+    <span ng-bind="$ctrl.pageTitle"></span>
+  </a>
+  <div class="navbar-search navbar-item">
+    <search-header></search-header>
+  </div>
+  <div class="navbar-item nav navbar-nav">
+    <div class="nav-item nav-link" uib-dropdown>
+      <a href="javascript:;" class="dropdown-toggle" uib-dropdown-toggle><span>English</span></a>
+      <div class="dropdown-menu dropdown-menu-right" uib-dropdown-menu>
+        <a class="dropdown-item" href="javascript:;">English</a>
+        <a class="dropdown-item" href="javascript:;">Russian</a></div>
+    </div>
+    <div class="nav-item nav-link" uib-dropdown>
+      <a href="javascript:;" class="dropdown-toggle" uib-dropdown-toggle>
+        <i class="material-icons">notifications</i> <span class="tag tag-danger">4</span>
+      </a>
+      <div class="dropdown-menu dropdown-menu-right notifications" uib-dropdown-menu>
+        <div class="dropdown-item">
+          <div class="notifications-wrapper">
+            <ul class="notifications-list">
+              <li><a href="javascript:;">
+                <div class="notification-icon">
+                  <div class="circle-icon bg-success text-white"><i class="material-icons">arrow_upward</i></div>
+                </div>
+                <div class="notification-message"><b>Sean</b> launched a new application <span class="time">2 seconds ago</span>
+                </div>
+              </a></li>
+              <li><a href="javascript:;">
+                <div class="notification-icon">
+                  <div class="circle-icon bg-danger text-white"><i class="material-icons">check</i></div>
+                </div>
+                <div class="notification-message"><b>Removed calendar</b> from app list <span
+                  class="time">4 hours ago</span>
+                </div>
+              </a></li>
+              <li><a href="javascript:;"><span class="notification-icon"><span
+                class="circle-icon bg-info text-white">J</span></span>
+                <div class="notification-message"><b>Jack Hunt</b> has <b>joined</b> mailing list <span
+                  class="time">9 days ago</span></div>
+              </a></li>
+              <li><a href="javascript:;"><span class="notification-icon"><span
+                class="circle-icon bg-primary text-white">C</span></span>
+                <div class="notification-message"><b>Conan Johns</b> created a new list <span
+                  class="time">9 days ago</span>
+                </div>
+              </a></li>
+            </ul>
+          </div>
+          <div class="notification-footer">Notifications</div>
+        </div>
+      </div>
+    </div>
+    <!--<a href="javascript:;" class="nav-item nav-link nav-link-icon" (click)="chatModel.show()">-->
+    <!--<i class="material-icons">chat_bubble</i>-->
+    <!--</a>-->
+  </div>
+</div>
+<!--<div class="modal fade sidebar-modal chat-panel" bsModal #chatModel="bs-modal" tabindex="-1" role="dialog" aria-labelledby="chat-panel"-->
+<!--aria-hidden="true">-->
+<!--<div class="modal-dialog">-->
+<!--<div class="modal-content">-->
+<!--<div class="chat-header"><a class="pull-right" href="javascript:;" data-dismiss="modal"><i class="material-icons">close</i></a>-->
+<!--<div class="chat-header-title">People</div>-->
+<!--</div>-->
+<!--<div class="modal-body flex scroll-y">-->
+<!--<div class="chat-group">-->
+<!--<div class="chat-group-header">Favourites</div>-->
+<!--<a href="javascript:;" data-toggle="modal" data-target=".chat-message"><span class="status-online"></span>-->
+<!--<span>Catherine Moreno</span> </a><a href="javascript:;" data-toggle="modal"-->
+<!--data-target=".chat-message"><span class="status-online"></span> <span>Denise Peterson</span>-->
+<!--</a><a href="javascript:;" data-toggle="modal" data-target=".chat-message"><span class="status-away"></span>-->
+<!--<span>Charles Wilson</span> </a><a href="javascript:;" data-toggle="modal" data-target=".chat-message"><span-->
+<!--class="status-away"></span> <span>Melissa Welch</span> </a><a href="javascript:;" data-toggle="modal"-->
+<!--data-target=".chat-message"><span-->
+<!--class="status-no-disturb"></span> <span>Vincent Peterson</span> </a><a href="javascript:;" data-toggle="modal"-->
+<!--data-target=".chat-message"><span-->
+<!--class="status-offline"></span> <span>Pamela Wood</span></a></div>-->
+<!--<div class="chat-group">-->
+<!--<div class="chat-group-header">Online</div>-->
+<!--<a href="javascript:;" data-toggle="modal" data-target=".chat-message"><span class="status-online"></span>-->
+<!--<span>Tammy Carpenter</span> </a><a href="javascript:;" data-toggle="modal"-->
+<!--data-target=".chat-message"><span class="status-away"></span> <span>Emma Sullivan</span>-->
+<!--</a><a href="javascript:;" data-toggle="modal" data-target=".chat-message"><span-->
+<!--class="status-no-disturb"></span> <span>Andrea Brewer</span> </a><a href="javascript:;" data-toggle="modal"-->
+<!--data-target=".chat-message"><span-->
+<!--class="status-online"></span> <span>Betty Simmons</span></a></div>-->
+<!--<div class="chat-group">-->
+<!--<div class="chat-group-header">Other</div>-->
+<!--<a href="javascript:;" data-toggle="modal" data-target=".chat-message"><span class="status-offline"></span>-->
+<!--<span>Denise Peterson</span> </a><a href="javascript:;" data-toggle="modal"-->
+<!--data-target=".chat-message"><span class="status-offline"></span> <span>Jose Rivera</span>-->
+<!--</a><a href="javascript:;" data-toggle="modal" data-target=".chat-message"><span class="status-offline"></span>-->
+<!--<span>Diana Robertson</span> </a><a href="javascript:;" data-toggle="modal" data-target=".chat-message"><span-->
+<!--class="status-offline"></span> <span>William Fields</span> </a><a href="javascript:;" data-toggle="modal"-->
+<!--data-target=".chat-message"><span-->
+<!--class="status-offline"></span> <span>Emily Stanley</span> </a><a href="javascript:;" data-toggle="modal"-->
+<!--data-target=".chat-message"><span-->
+<!--class="status-offline"></span> <span>Jack Hunt</span> </a><a href="javascript:;" data-toggle="modal"-->
+<!--data-target=".chat-message"><span-->
+<!--class="status-offline"></span> <span>Sharon Rice</span> </a><a href="javascript:;" data-toggle="modal"-->
+<!--data-target=".chat-message"><span-->
+<!--class="status-offline"></span> <span>Mary Holland</span> </a><a href="javascript:;" data-toggle="modal"-->
+<!--data-target=".chat-message"><span-->
+<!--class="status-offline"></span> <span>Diane Hughes</span> </a><a href="javascript:;" data-toggle="modal"-->
+<!--data-target=".chat-message"><span-->
+<!--class="status-offline"></span> <span>Steven Smith</span> </a><a href="javascript:;" data-toggle="modal"-->
+<!--data-target=".chat-message"><span-->
+<!--class="status-offline"></span> <span>Emily Henderson</span> </a><a href="javascript:;" data-toggle="modal"-->
+<!--data-target=".chat-message"><span-->
+<!--class="status-offline"></span> <span>Wayne Kelly</span> </a><a href="javascript:;" data-toggle="modal"-->
+<!--data-target=".chat-message"><span-->
+<!--class="status-offline"></span> <span>Jane Garcia</span> </a><a href="javascript:;" data-toggle="modal"-->
+<!--data-target=".chat-message"><span-->
+<!--class="status-offline"></span> <span>Jose Jimenez</span> </a><a href="javascript:;" data-toggle="modal"-->
+<!--data-target=".chat-message"><span-->
+<!--class="status-offline"></span> <span>Rachel Burton</span> </a><a href="javascript:;" data-toggle="modal"-->
+<!--data-target=".chat-message"><span-->
+<!--class="status-offline"></span> <span>Samantha Ruiz</span></a></div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->

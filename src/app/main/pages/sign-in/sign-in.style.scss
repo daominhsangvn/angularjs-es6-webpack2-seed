@@ -1,0 +1,9 @@
+sign-in {
+  @extend div;
+  .btn.btn-primary.btn-block {
+    .btn-spinner {
+      top: 4px;
+      float: right;
+    }
+  }
+}
