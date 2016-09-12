@@ -1,6 +1,12 @@
 /* Core styles */
 @import './../core/scss/index';
 
+body{
+  > div[ui-view]{
+    height: inherit;
+  }
+}
+
 /* App Component styles */
 app {
   @extend body !optional;

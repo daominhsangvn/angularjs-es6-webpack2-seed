@@ -3,7 +3,7 @@ const webpackMerge = require('webpack-merge'); // used to merge webpack configs
 const commonConfig = require('./webpack.common.js'); // the settings that are common to prod and dev
 const deployConfig = require('./deploy.config');
 const argvs = process.argv.splice(2);
-let deployProfile = deployConfig.envs['nois'];
+let deployProfile = deployConfig.envs['staging'];
 if (argvs.filter((e)=> {
     return /^--env\.profile/.test(e);
   }).length) {

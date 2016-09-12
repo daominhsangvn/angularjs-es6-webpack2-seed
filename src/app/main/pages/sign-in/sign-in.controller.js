@@ -1,4 +1,5 @@
 export default class Controller {
+  /*@ngInject*/
   constructor(AuthenticationService, $state) {
     this._authenticationService = AuthenticationService;
     this._$state = $state;
